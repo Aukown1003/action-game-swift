@@ -8,6 +8,8 @@
 import UIKit
 import SwiftyGif
 
+let soundPlayer = SoundPlayer()
+
 class ViewController: UIViewController {
     @IBOutlet weak var character: UIImageView!
     var idleImage: UIImage!
@@ -15,9 +17,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        let gifImage = try! UIImage(gifName: "idle_animation.gif")
-//        self.character.setGifImage(gifImage, loopCount: -1)
         let gif1Image = try! UIImage(gifName: "idle_animation.gif")
         idleImage = gif1Image
         character.setGifImage(idleImage)
@@ -48,6 +47,7 @@ class ViewController: UIViewController {
         }
 //      タイマーを開始
         timer?.resume()
+        soundPlayer.attackPlay()
     }
 
 
