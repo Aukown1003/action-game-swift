@@ -11,9 +11,22 @@ import SwiftyGif
 let soundPlayer = SoundPlayer()
 
 class ViewController: UIViewController {
+    // 画面の回転を許可するかどうか
+    override var shouldAutorotate: Bool {
+        // 回転を許可しない
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        // 横（左）表示
+        return .landscapeLeft
+    }
+    
     @IBOutlet weak var character: UIImageView!
+    @IBOutlet weak var enemy: UIImageView!
     var idleImage: UIImage!
     var attackImage: UIImage!
+    var enemyImage: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +35,13 @@ class ViewController: UIViewController {
         character.setGifImage(idleImage)
         let gif2Image = try! UIImage(gifName: "attack_animation.gif")
         attackImage = gif2Image
+        let gif3Image = try! UIImage(gifName: "enemy-1.gif")
+        enemyImage = gif3Image
+        enemy.setGifImage(enemyImage)
     }
     
     private func resetGif() {
         character.setGifImage(idleImage)
-        
     }
 //    DispatchSourceTimerを格納するプロパティtimerを定義。optional型
     private var timer: DispatchSourceTimer?
@@ -47,6 +62,7 @@ class ViewController: UIViewController {
         }
 //      タイマーを開始
         timer?.resume()
+        //音楽の再生
         soundPlayer.attackPlay()
     }
 
