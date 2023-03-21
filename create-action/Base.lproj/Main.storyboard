@@ -58,28 +58,28 @@
             </objects>
             <point key="canvasLocation" x="-836.50107991360699" y="-527.10280373831768"/>
         </scene>
-        <!--View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="action_game_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlayViewController" customModule="action_game_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="idle_animation.gif" translatesAutoresizingMaskIntoConstraints="NO" id="C5C-uW-XBH">
-                                <rect key="frame" x="124" y="112" width="181" height="161"/>
+                                <rect key="frame" x="123" y="111" width="182" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-XH-jB4">
-                                <rect key="frame" x="171" y="311" width="87" height="38"/>
+                                <rect key="frame" x="171" y="311" width="86" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Attack!"/>
                                 <connections>
-                                    <action selector="toggleButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="r85-YP-twn"/>
+                                    <action selector="toggleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ra-9a-Fog"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy-1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="3di-sa-Rqa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy-1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="3di-sa-Rqa" customClass="Enemy" customModule="action_game_swift" customModuleProvider="target">
                                 <rect key="frame" x="616" y="93" width="217" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -88,8 +88,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <connections>
-                        <outlet property="character" destination="C5C-uW-XBH" id="cPF-9a-hR1"/>
-                        <outlet property="enemy" destination="3di-sa-Rqa" id="YJC-Pt-qED"/>
+                        <outlet property="character" destination="C5C-uW-XBH" id="wbs-E0-nSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

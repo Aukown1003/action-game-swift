@@ -35,9 +35,7 @@ class ViewController: UIViewController {
         character.setGifImage(idleImage)
         let gif2Image = try! UIImage(gifName: "attack_animation.gif")
         attackImage = gif2Image
-        let gif3Image = try! UIImage(gifName: "enemy-1.gif")
-        enemyImage = gif3Image
-        enemy.setGifImage(enemyImage)
+
     }
     
     private func resetGif() {

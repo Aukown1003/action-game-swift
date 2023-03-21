@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0015400329C9BE550046BEF8 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015400229C9BE550046BEF8 /* PlayViewController.swift */; };
 		0018D6F829BDC7E9004FEAAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018D6F729BDC7E9004FEAAA /* AppDelegate.swift */; };
 		0018D6FA29BDC7E9004FEAAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018D6F929BDC7E9004FEAAA /* SceneDelegate.swift */; };
 		0018D6FC29BDC7E9004FEAAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018D6FB29BDC7E9004FEAAA /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0015400229C9BE550046BEF8 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		0018D6F429BDC7E9004FEAAA /* action-game-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "action-game-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0018D6F729BDC7E9004FEAAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0018D6F929BDC7E9004FEAAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				0018D6F929BDC7E9004FEAAA /* SceneDelegate.swift */,
 				0018D6FB29BDC7E9004FEAAA /* ViewController.swift */,
 				0045C2C029C82FD30009D7C5 /* Enemy.swift */,
+				0015400229C9BE550046BEF8 /* PlayViewController.swift */,
 				007A15A329C1392000DD2B50 /* SoundPlayer.swift */,
 				0018D70D29BDCF72004FEAAA /* gif */,
 				0018D6FD29BDC7E9004FEAAA /* Main.storyboard */,
@@ -240,6 +243,7 @@
 				0045C2C129C82FD30009D7C5 /* Enemy.swift in Sources */,
 				0018D6F829BDC7E9004FEAAA /* AppDelegate.swift in Sources */,
 				007A15A429C1392000DD2B50 /* SoundPlayer.swift in Sources */,
+				0015400329C9BE550046BEF8 /* PlayViewController.swift in Sources */,
 				0018D6FA29BDC7E9004FEAAA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
