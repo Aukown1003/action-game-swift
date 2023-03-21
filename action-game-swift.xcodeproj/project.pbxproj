@@ -15,6 +15,7 @@
 		0018D70429BDC7EA004FEAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0018D70229BDC7EA004FEAAA /* LaunchScreen.storyboard */; };
 		0018D71129BDCFEB004FEAAA /* attack_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0018D71029BDCFEB004FEAAA /* attack_animation.gif */; };
 		0018D71529BDD5C0004FEAAA /* dowm_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0018D71429BDD5C0004FEAAA /* dowm_animation.gif */; };
+		0045C2C129C82FD30009D7C5 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045C2C029C82FD30009D7C5 /* Enemy.swift */; };
 		007A15A429C1392000DD2B50 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A15A329C1392000DD2B50 /* SoundPlayer.swift */; };
 		00DA9C0129C0CCE4008AAF29 /* idle_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00DA9C0029C0CCE4008AAF29 /* idle_animation.gif */; };
 		00F540C829C5F4E600DDC7BC /* enemy-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00F540C729C5F4E600DDC7BC /* enemy-1.gif */; };
@@ -32,6 +33,7 @@
 		0018D70529BDC7EA004FEAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0018D71029BDCFEB004FEAAA /* attack_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = attack_animation.gif; sourceTree = "<group>"; };
 		0018D71429BDD5C0004FEAAA /* dowm_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dowm_animation.gif; sourceTree = "<group>"; };
+		0045C2C029C82FD30009D7C5 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		007A15A329C1392000DD2B50 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		00DA9C0029C0CCE4008AAF29 /* idle_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = idle_animation.gif; path = "../../../../../Downloads/Swift用ファイル/idle_animation.gif"; sourceTree = "<group>"; };
 		00F540C729C5F4E600DDC7BC /* enemy-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "enemy-1.gif"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				0018D6F729BDC7E9004FEAAA /* AppDelegate.swift */,
 				0018D6F929BDC7E9004FEAAA /* SceneDelegate.swift */,
 				0018D6FB29BDC7E9004FEAAA /* ViewController.swift */,
+				0045C2C029C82FD30009D7C5 /* Enemy.swift */,
 				007A15A329C1392000DD2B50 /* SoundPlayer.swift */,
 				0018D70D29BDCF72004FEAAA /* gif */,
 				0018D6FD29BDC7E9004FEAAA /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0018D6FC29BDC7E9004FEAAA /* ViewController.swift in Sources */,
+				0045C2C129C82FD30009D7C5 /* Enemy.swift in Sources */,
 				0018D6F829BDC7E9004FEAAA /* AppDelegate.swift in Sources */,
 				007A15A429C1392000DD2B50 /* SoundPlayer.swift in Sources */,
 				0018D6FA29BDC7E9004FEAAA /* SceneDelegate.swift in Sources */,
